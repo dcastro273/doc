@@ -2,7 +2,7 @@
 
 ## Parameters
 
-When sending data values to the database, you should use parameters rather than including the values in the SQL as follows:
+When sending data values to the database, rather than including the values in the SQL, you should use parameters as follows:
 
 ```c#
 using (var cmd = new NpgsqlCommand("INSERT INTO table (col1) VALUES (@p)", conn))
